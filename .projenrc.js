@@ -7,5 +7,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 
   release: true,
   defaultReleaseBranch: 'main',
+  
+  prettier: true,
 });
 project.synth();
