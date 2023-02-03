@@ -56,3 +56,5 @@ junit.xml
 /cdk.out/
 .cdk.staging/
 .parcel-cache/
+!/src/services/details-fetcher-function.ts
+!/src/services/scrapper-function.ts

@@ -43,7 +43,51 @@
     },
     "bundle": {
       "name": "bundle",
-      "description": "Prepare assets"
+      "description": "Prepare assets",
+      "steps": [
+        {
+          "spawn": "bundle:services/details-fetcher.lambda"
+        },
+        {
+          "spawn": "bundle:services/scrapper.lambda"
+        }
+      ]
+    },
+    "bundle:services/details-fetcher.lambda": {
+      "name": "bundle:services/details-fetcher.lambda",
+      "description": "Create a JavaScript bundle from src/services/details-fetcher.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/services/details-fetcher.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/services/details-fetcher.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/*"
+        }
+      ]
+    },
+    "bundle:services/details-fetcher.lambda:watch": {
+      "name": "bundle:services/details-fetcher.lambda:watch",
+      "description": "Continuously update the JavaScript bundle from src/services/details-fetcher.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/services/details-fetcher.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/services/details-fetcher.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/* --watch"
+        }
+      ]
+    },
+    "bundle:services/scrapper.lambda": {
+      "name": "bundle:services/scrapper.lambda",
+      "description": "Create a JavaScript bundle from src/services/scrapper.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/services/scrapper.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/services/scrapper.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/*"
+        }
+      ]
+    },
+    "bundle:services/scrapper.lambda:watch": {
+      "name": "bundle:services/scrapper.lambda:watch",
+      "description": "Continuously update the JavaScript bundle from src/services/scrapper.lambda.ts",
+      "steps": [
+        {
+          "exec": "esbuild --bundle src/services/scrapper.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/services/scrapper.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:@aws-sdk/* --watch"
+        }
+      ]
     },
     "clobber": {
       "name": "clobber",
@@ -252,19 +296,19 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor"
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='rxjs'"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='rxjs'"
         },
         {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor"
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='rxjs'"
         },
         {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor"
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='rxjs'"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='rxjs'"
         },
         {
           "exec": "yarn install --check-files"

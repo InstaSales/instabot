@@ -1,6 +1,22 @@
 {
   "dependencies": [
     {
+      "name": "@aws-sdk/client-dynamodb",
+      "type": "build"
+    },
+    {
+      "name": "@aws-sdk/client-secrets-manager",
+      "type": "build"
+    },
+    {
+      "name": "@aws-sdk/util-dynamodb",
+      "type": "build"
+    },
+    {
+      "name": "@types/aws-lambda",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -21,7 +37,7 @@
     },
     {
       "name": "aws-cdk",
-      "version": "^2.61.1",
+      "version": "^2.63.0",
       "type": "build"
     },
     {
@@ -93,13 +109,58 @@
       "type": "build"
     },
     {
+      "name": "@aws-lambda-powertools/logger",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-lambda-powertools/metrics",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-lambda-powertools/tracer",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-sdk/client-sqs",
+      "type": "runtime"
+    },
+    {
+      "name": "@middy/core",
+      "type": "runtime"
+    },
+    {
+      "name": "@middy/dynamodb",
+      "type": "runtime"
+    },
+    {
+      "name": "@middy/event-normalizer",
+      "type": "runtime"
+    },
+    {
+      "name": "@middy/secrets-manager",
+      "type": "runtime"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "^2.61.1",
+      "version": "^2.63.0",
+      "type": "runtime"
+    },
+    {
+      "name": "aws-sdk",
       "type": "runtime"
     },
     {
       "name": "constructs",
       "version": "^10.0.5",
+      "type": "runtime"
+    },
+    {
+      "name": "instagram-private-api",
+      "type": "runtime"
+    },
+    {
+      "name": "rxjs",
+      "version": "6.6.7",
       "type": "runtime"
     }
   ],

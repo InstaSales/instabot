@@ -18,6 +18,8 @@
     ".projen/tasks.json",
     "cdk.json",
     "LICENSE",
+    "src/services/details-fetcher-function.ts",
+    "src/services/scrapper-function.ts",
     "tsconfig.dev.json",
     "tsconfig.json"
   ],

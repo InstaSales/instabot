@@ -56,7 +56,9 @@
       {
         "devDependencies": [
           "**/test/**",
-          "**/build-tools/**"
+          "**/build-tools/**",
+          "src/services/details-fetcher.lambda.ts",
+          "src/services/scrapper.lambda.ts"
         ],
         "optionalDependencies": false,
         "peerDependencies": true
