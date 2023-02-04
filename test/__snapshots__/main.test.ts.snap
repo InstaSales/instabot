@@ -10,6 +10,41 @@ exports[`Snapshot 1`] = `
     },
   },
   "Resources": {
+    "BusinessIdsQueueE0E6B976": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "FifoQueue": false,
+        "VisibilityTimeout": 300,
+      },
+      "Type": "AWS::SQS::Queue",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "BusinessInstagramAccountsTableFF9A035B": {
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "instagramId",
+            "AttributeType": "S",
+          },
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "instagramId",
+            "KeyType": "HASH",
+          },
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5,
+        },
+        "StreamSpecification": {
+          "StreamViewType": "NEW_IMAGE",
+        },
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
     "BusinessVocabularyTable09F004AE": {
       "DeletionPolicy": "Retain",
       "Properties": {
@@ -33,6 +68,146 @@ exports[`Snapshot 1`] = `
       "Type": "AWS::DynamoDB::Table",
       "UpdateReplacePolicy": "Retain",
     },
+    "DetailsFetcherFunction9225DD6B": {
+      "DependsOn": [
+        "DetailsFetcherFunctionServiceRoleDefaultPolicyCA03263D",
+        "DetailsFetcherFunctionServiceRole2A7D1DE8",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "0f849fb3c1c40b484bc2edc98db95bfeeb013ee6edf908667de92cee6e734071.zip",
+        },
+        "Description": "src/services/details-fetcher.lambda.ts",
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "DetailsFetcherFunctionServiceRole2A7D1DE8",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 300,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "DetailsFetcherFunctionServiceRole2A7D1DE8": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "DetailsFetcherFunctionServiceRoleDefaultPolicyCA03263D": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Ref": "IgCredentialsB6CB7B30",
+              },
+            },
+            {
+              "Action": [
+                "sqs:ReceiveMessage",
+                "sqs:ChangeMessageVisibility",
+                "sqs:GetQueueUrl",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes",
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "BusinessIdsQueueE0E6B976",
+                  "Arn",
+                ],
+              },
+            },
+            {
+              "Action": "dynamodb:*",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "BusinessVocabularyTable09F004AE",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Ref": "AWS::NoValue",
+                },
+              ],
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "DetailsFetcherFunctionServiceRoleDefaultPolicyCA03263D",
+        "Roles": [
+          {
+            "Ref": "DetailsFetcherFunctionServiceRole2A7D1DE8",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "DetailsFetcherFunctionSqsEventSourcetestBusinessIdsQueue5EFA45E1B565C319": {
+      "Properties": {
+        "EventSourceArn": {
+          "Fn::GetAtt": [
+            "BusinessIdsQueueE0E6B976",
+            "Arn",
+          ],
+        },
+        "FunctionName": {
+          "Ref": "DetailsFetcherFunction9225DD6B",
+        },
+      },
+      "Type": "AWS::Lambda::EventSourceMapping",
+    },
+    "IgCredentialsB6CB7B30": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "SecretString": "{"username":"username","password":"password"}",
+      },
+      "Type": "AWS::SecretsManager::Secret",
+      "UpdateReplacePolicy": "Delete",
+    },
     "ScrapperFunction3A9F38A0": {
       "DependsOn": [
         "ScrapperFunctionServiceRoleDefaultPolicyD71ED2B1",
@@ -43,7 +218,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "7a071d7cbdadebf0326b7e23270429554ce82bd9af060d6cdf04c8972a7e18c4.zip",
+          "S3Key": "2dc5686a92bb7e42daa1047f1f436163dcd81857e73f12d7c652e5773962474e.zip",
         },
         "Description": "src/services/scrapper.lambda.ts",
         "Environment": {
@@ -51,6 +226,63 @@ exports[`Snapshot 1`] = `
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "BUSINESS_FAILURE_VOCABULARY_TABLE_NAME": {
               "Ref": "BusinessVocabularyTable09F004AE",
+            },
+            "BUSINESS_FAILURE_VOCABULARY_TABLE_PRIMARY_KEY": "phrase",
+            "BUSINESS_IDS_QUEUE_URL": {
+              "Ref": "BusinessIdsQueueE0E6B976",
+            },
+            "IG_CREDENTIALS_SECRET_NAME": {
+              "Fn::Join": [
+                "-",
+                [
+                  {
+                    "Fn::Select": [
+                      0,
+                      {
+                        "Fn::Split": [
+                          "-",
+                          {
+                            "Fn::Select": [
+                              6,
+                              {
+                                "Fn::Split": [
+                                  ":",
+                                  {
+                                    "Ref": "IgCredentialsB6CB7B30",
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    "Fn::Select": [
+                      1,
+                      {
+                        "Fn::Split": [
+                          "-",
+                          {
+                            "Fn::Select": [
+                              6,
+                              {
+                                "Fn::Split": [
+                                  ":",
+                                  {
+                                    "Ref": "IgCredentialsB6CB7B30",
+                                  },
+                                ],
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              ],
             },
           },
         },
@@ -62,8 +294,32 @@ exports[`Snapshot 1`] = `
           ],
         },
         "Runtime": "nodejs18.x",
+        "Timeout": 300,
       },
       "Type": "AWS::Lambda::Function",
+    },
+    "ScrapperFunctionDynamoDBEventSourcetestBusinessInstagramAccountsTable02685F9AA1634E37": {
+      "Properties": {
+        "BatchSize": 100,
+        "EventSourceArn": {
+          "Fn::GetAtt": [
+            "BusinessInstagramAccountsTableFF9A035B",
+            "StreamArn",
+          ],
+        },
+        "FilterCriteria": {
+          "Filters": [
+            {
+              "Pattern": "{"eventName":["INSERT"]}",
+            },
+          ],
+        },
+        "FunctionName": {
+          "Ref": "ScrapperFunction3A9F38A0",
+        },
+        "StartingPosition": "TRIM_HORIZON",
+      },
+      "Type": "AWS::Lambda::EventSourceMapping",
     },
     "ScrapperFunctionServiceRole980A13C9": {
       "Properties": {
@@ -102,27 +358,46 @@ exports[`Snapshot 1`] = `
           "Statement": [
             {
               "Action": [
-                "dynamodb:BatchGetItem",
-                "dynamodb:GetRecords",
-                "dynamodb:GetShardIterator",
-                "dynamodb:Query",
-                "dynamodb:GetItem",
-                "dynamodb:Scan",
-                "dynamodb:ConditionCheckItem",
-                "dynamodb:DescribeTable",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
               ],
               "Effect": "Allow",
-              "Resource": [
-                {
-                  "Fn::GetAtt": [
-                    "BusinessVocabularyTable09F004AE",
-                    "Arn",
-                  ],
-                },
-                {
-                  "Ref": "AWS::NoValue",
-                },
+              "Resource": {
+                "Ref": "IgCredentialsB6CB7B30",
+              },
+            },
+            {
+              "Action": [
+                "sqs:SendMessage",
+                "sqs:GetQueueAttributes",
+                "sqs:GetQueueUrl",
               ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "BusinessIdsQueueE0E6B976",
+                  "Arn",
+                ],
+              },
+            },
+            {
+              "Action": "dynamodb:ListStreams",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            {
+              "Action": [
+                "dynamodb:DescribeStream",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "BusinessInstagramAccountsTableFF9A035B",
+                  "StreamArn",
+                ],
+              },
             },
           ],
           "Version": "2012-10-17",
