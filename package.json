@@ -52,7 +52,7 @@
     "jest-junit": "^15",
     "npm-check-updates": "^16",
     "prettier": "^2.8.8",
-    "projen": "^0.71.63",
+    "projen": "^0.71.64",
     "standard-version": "^9",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
@@ -68,7 +68,7 @@
     "@middy/event-normalizer": "^4.4.2",
     "@middy/secrets-manager": "^4.4.2",
     "aws-cdk-lib": "^2.63.0",
-    "aws-sdk": "^2.1380.0",
+    "aws-sdk": "^2.1381.0",
     "constructs": "^10.0.5",
     "instagram-private-api": "^1.45.3",
     "rxjs": "6.6.7"
