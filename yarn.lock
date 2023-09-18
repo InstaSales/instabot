@@ -1359,36 +1359,36 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.0.3.tgz#e742a5b85eb673e2f1746b0f39cb932cbc6145bb"
   integrity sha512-GlM2AbzrErd/TmLL3E8hAHmb5Q7VhDJp35vIbyPVA5Rz55LZuRr8pwL3qrwwkVNo05gMX1J44gURKb4MHQZo7w==
 
-"@middy/core@^4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.2.tgz#c45564197a2195efd3c413384ddfd972ff4b7942"
-  integrity sha512-pEy2tAvlQfo3hyskZBkgeEi2kjjc7ZQoblcLHKanyfgubf1NPfzW35oHj1jW5GNK4lDpJoV3LAflAMH1NxdX2Q==
+"@middy/core@^4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.4.tgz#088bea9c8c0c05ad663310c7e39ea247294e2d72"
+  integrity sha512-yO+z6ijOFUeXJj/SOmEy2lP0ZxGGkJyaNXSUUQZdyLeNIzHtqqCvef/eIym5WZnl4prEr76sHCv0dwEmfSwYLQ==
 
-"@middy/dynamodb@^4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.2.tgz#02459b1f46063fc1c962a4534cff7a8fb89faa96"
-  integrity sha512-d4TcETdnfwaVjtls+hukt/bEyZCaY0YUm868MWA8Ofn27YsSMGHktibxzYj67sO0eu9p3LCODLB9Bg4dLNajYw==
+"@middy/dynamodb@^4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.4.tgz#8611780f51dce42a939f20e7bea041cdf6da5598"
+  integrity sha512-+ixqPu8luH8SknhE11q1MaHNoqfh4TZt+U/f3hOCQ7mwXIy2tZ9iKGuQtIdmuOOgMgD4v0jDchXisgjEV4O0VA==
   dependencies:
-    "@middy/util" "4.6.2"
+    "@middy/util" "4.6.4"
 
-"@middy/event-normalizer@^4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.2.tgz#8e5077ee8113603fb985fc24e7bfca9e82a3ff59"
-  integrity sha512-NtVR7xhY/YHp5amGQAfoYob42LugilNj9Dj8tEwMvT/VAsGYXthwVzhKqlF6Fo7bbEP2QNrs9U/CNozunNxfdw==
+"@middy/event-normalizer@^4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.4.tgz#b442235dfe37158e6b832b291054bb6f1b79e06a"
+  integrity sha512-t5UmFTChRFKmdA2aEk+NLGg8RYitcXZjINth20CdrKXdms3nwtrAvEq/EpVh9LzfXIBMWbld78IEF7fEWjTdXg==
   dependencies:
-    "@middy/util" "4.6.2"
+    "@middy/util" "4.6.4"
 
-"@middy/secrets-manager@^4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.2.tgz#7490b4981bbe1b938dc0bf592ffb382e3b597e5e"
-  integrity sha512-z5OM+0KH/y5GKxwyT0I7xWiNCAIWTUgIQLaDVsIaje+saKkz60xlLZgL5pUZSzwVFk+sgAx6gtX+czWZ/QNpdg==
+"@middy/secrets-manager@^4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.4.tgz#3cf3ccf8411a697bca0ed0b11d10c67743c02957"
+  integrity sha512-ORYsn+k9iomujAZtDOsCYtk3dAYYHtddKYul1Dc5jZvObfwJ4K8YYPZAKYf9Gz3cf5yxgDDfmW6K/1Eg6rcr6w==
   dependencies:
-    "@middy/util" "4.6.2"
+    "@middy/util" "4.6.4"
 
-"@middy/util@4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.2.tgz#68f63904fb09708502e5d7c79142ed4da9abcecc"
-  integrity sha512-VPxAEGNKJ/Rn1Wa3stElHDajTdyLTsctPdXgr2n8dB6QooT/EvAAzw94IvTzfpXvNKEXAYo+PZBRRLnErwp6Xw==
+"@middy/util@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.4.tgz#b4a6d7e1d047f9d1c54c50fbb4260bce310e718d"
+  integrity sha512-U9wQtmBlnHKdkTMUfdJXVkVRU0BKdXBOi3jFPalUVgZL/SlMACLyelitFUmNhfsjXBPvBdPJg7wadnAzzWRRZQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -5946,9 +5946,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.14.3"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.14.3.tgz#c2fdf1fe438a96e6258ceeb38f835024cf55d732"
-  integrity sha512-iviPM0LiTFGUtk+kMtcMVLNeGuSORThj9Cho7GV/Z2l5dMdXFrcgIarMSr6d6f1wYJJBIthuNdJWXZ4NH5VPEg==
+  version "16.14.4"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.14.4.tgz#561e97e92079ae4dbab9d9cbeb424d292ca01bae"
+  integrity sha512-PKg1wv3vno75/9qgRLqV2huBO7eukOlW+PmIGl7LPXjElfYTUTWUtaMOdOckImaSj4Uqe46W/zMbMFZQp5dHRQ==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
@@ -6394,10 +6394,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.73.22:
-  version "0.73.22"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.22.tgz#535632fb9af03fb21c58920bcf0edcace649f6ad"
-  integrity sha512-OazEG+uJXsyodIECy90NWsIWiUQffAn7Q5f5TigIaztrLlVKMh3Cl17ObHz4CakIuI6gNnUHGvxRIXbpCjzV9A==
+projen@^0.73.23:
+  version "0.73.23"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.23.tgz#419516bcdc335dfd1f97978c29690c1e97c2c60a"
+  integrity sha512-6EADkVbNI0CnGiQ8LnIAsNnCkKU1NO7YmSR/v4Ih/qBOrUMHNTU/fCkqhSb2EcPpP/xapK9Xve4ViwhHqaro+g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
