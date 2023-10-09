@@ -1361,36 +1361,36 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.0.3.tgz#e742a5b85eb673e2f1746b0f39cb932cbc6145bb"
   integrity sha512-GlM2AbzrErd/TmLL3E8hAHmb5Q7VhDJp35vIbyPVA5Rz55LZuRr8pwL3qrwwkVNo05gMX1J44gURKb4MHQZo7w==
 
-"@middy/core@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.4.tgz#088bea9c8c0c05ad663310c7e39ea247294e2d72"
-  integrity sha512-yO+z6ijOFUeXJj/SOmEy2lP0ZxGGkJyaNXSUUQZdyLeNIzHtqqCvef/eIym5WZnl4prEr76sHCv0dwEmfSwYLQ==
+"@middy/core@^4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.5.tgz#4aa2662c751022b8518ebf23aa89369d0b4ad2c2"
+  integrity sha512-nsAmIcafn2GGHz7yOJecEZjQ0UVARC+Wem2wzGELolXKM2TskcyDcvwqDSlas4pwh7gzHTdfwP+pUmQVRGWJPQ==
 
-"@middy/dynamodb@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.4.tgz#8611780f51dce42a939f20e7bea041cdf6da5598"
-  integrity sha512-+ixqPu8luH8SknhE11q1MaHNoqfh4TZt+U/f3hOCQ7mwXIy2tZ9iKGuQtIdmuOOgMgD4v0jDchXisgjEV4O0VA==
+"@middy/dynamodb@^4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.5.tgz#bf2ac63586203841462e9ab1565994afda6b2988"
+  integrity sha512-vuMP6RBeh4Hrlp/YmC8iyRtAZoxbulcc9Fz9GHwLDMILfpIeaFvZyyI6JXNI3siY3UnKwzeOAD1E0xPTHA2SEQ==
   dependencies:
-    "@middy/util" "4.6.4"
+    "@middy/util" "4.6.5"
 
-"@middy/event-normalizer@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.4.tgz#b442235dfe37158e6b832b291054bb6f1b79e06a"
-  integrity sha512-t5UmFTChRFKmdA2aEk+NLGg8RYitcXZjINth20CdrKXdms3nwtrAvEq/EpVh9LzfXIBMWbld78IEF7fEWjTdXg==
+"@middy/event-normalizer@^4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.5.tgz#3b2f68322aaf2c8c99de83b86042b821ea30ee08"
+  integrity sha512-PFUhyt6TnH5whZQbYGVbqs3L+GIcnwXCk6uvpSg2MvQfFBCVk9Ij2rEUmL4ZCO/X/HQ4Af6fCWeDgF5wdQPK9Q==
   dependencies:
-    "@middy/util" "4.6.4"
+    "@middy/util" "4.6.5"
 
-"@middy/secrets-manager@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.4.tgz#3cf3ccf8411a697bca0ed0b11d10c67743c02957"
-  integrity sha512-ORYsn+k9iomujAZtDOsCYtk3dAYYHtddKYul1Dc5jZvObfwJ4K8YYPZAKYf9Gz3cf5yxgDDfmW6K/1Eg6rcr6w==
+"@middy/secrets-manager@^4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.5.tgz#522b06cec04edc2a22a4a99ca732cf0f960f068f"
+  integrity sha512-cAtjSAmQxS5Ob4lCmM+cRgzylk3q44DURW3JnsN83dDfyakH38Kh1eRsBTscvmXRL8qGjcV5JUJlzfjjhfdS6g==
   dependencies:
-    "@middy/util" "4.6.4"
+    "@middy/util" "4.6.5"
 
-"@middy/util@4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.4.tgz#b4a6d7e1d047f9d1c54c50fbb4260bce310e718d"
-  integrity sha512-U9wQtmBlnHKdkTMUfdJXVkVRU0BKdXBOi3jFPalUVgZL/SlMACLyelitFUmNhfsjXBPvBdPJg7wadnAzzWRRZQ==
+"@middy/util@4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.5.tgz#cf5efe5ba85554d88c530aa8f12a5b32facc3779"
+  integrity sha512-4cSIgW2kLYcfQ13Z1hHK7BDLCBsBe76iIiJ7xlPd/G3gwOl661K/jYGFkpNvksbmkEpqwNR1EFve0Mw3i2jMJQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -6389,10 +6389,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.74.5:
-  version "0.74.5"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.74.5.tgz#78944419498f36ceb67fbd9aed0f3a18564200ed"
-  integrity sha512-8SgABHSu1BSSFeLZ4XtXUm4aEpBdq5JqPPrTQ/hmz1x77Ep9bcUhL3wW6LkT/Ww7e0HkvgIss1czGwDGx7Cabw==
+projen@^0.74.6:
+  version "0.74.6"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.74.6.tgz#ed94739005b001bd9150a61f4fa655ae9bad2494"
+  integrity sha512-LBxLc7bS/qJ9u1SDQ+rmhly7wk9VUusAaOOC8vMVp1u/38d2kl4pp6JxsWcwiDvD6505Yf86onXXaSWibjHySA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
