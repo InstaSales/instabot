@@ -207,10 +207,10 @@
     tslib "^2.5.0"
     uuid "^8.3.2"
 
-"@aws-sdk/client-sqs@^3.445.0":
-  version "3.445.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sqs/-/client-sqs-3.445.0.tgz#ebcc7256aa0c9ec0cc4b2dba520d8d16ad1d37d8"
-  integrity sha512-CJVr2bgOMmkPeJGimAYNyZGjhSpfBSQDs5IsV+CLVJATaVsC+AD6HnN/w6WIQ+jo2DpwHazwfKZwlxSd6wP1XQ==
+"@aws-sdk/client-sqs@^3.446.0":
+  version "3.446.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sqs/-/client-sqs-3.446.0.tgz#9261ebe28ad2bdd4961bc746d9a74440c30a9a4d"
+  integrity sha512-mSqZNXQoxH/Q2reafGMjBgEJbcLUIGM/x9zGD2uuxCYV6LkUG9uCfVMQNjnITSLAWB905xV0Q/YQrL+AgfdPHQ==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
@@ -252,7 +252,6 @@
     "@smithy/util-endpoints" "^1.0.2"
     "@smithy/util-retry" "^2.0.5"
     "@smithy/util-utf8" "^2.0.0"
-    fast-xml-parser "4.2.5"
     tslib "^2.5.0"
 
 "@aws-sdk/client-sso@3.445.0":
@@ -1379,36 +1378,36 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.0.3.tgz#e742a5b85eb673e2f1746b0f39cb932cbc6145bb"
   integrity sha512-GlM2AbzrErd/TmLL3E8hAHmb5Q7VhDJp35vIbyPVA5Rz55LZuRr8pwL3qrwwkVNo05gMX1J44gURKb4MHQZo7w==
 
-"@middy/core@^4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.5.tgz#4aa2662c751022b8518ebf23aa89369d0b4ad2c2"
-  integrity sha512-nsAmIcafn2GGHz7yOJecEZjQ0UVARC+Wem2wzGELolXKM2TskcyDcvwqDSlas4pwh7gzHTdfwP+pUmQVRGWJPQ==
+"@middy/core@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.6.tgz#a5df69f63b2b72e45be037635e4474253177c0e7"
+  integrity sha512-ao3nP4yt0C9gc1F9KxSJ5vSJXQP87OhvyhB1UxEXGEOBk7ACZuNeZAU40/+Vk+EiQ4Em9H5R7RYUuPdiczRvoQ==
 
-"@middy/dynamodb@^4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.5.tgz#bf2ac63586203841462e9ab1565994afda6b2988"
-  integrity sha512-vuMP6RBeh4Hrlp/YmC8iyRtAZoxbulcc9Fz9GHwLDMILfpIeaFvZyyI6JXNI3siY3UnKwzeOAD1E0xPTHA2SEQ==
+"@middy/dynamodb@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.6.tgz#de09814623a9f7e075829ace8603fcf1e9450ce3"
+  integrity sha512-O1XeVgpa2i4aG+UjNy0ba/CRXfAXKINd8f+MuqjfeYqhi2i+sEcL+uIMlEb9edzMKVws6bsBfOWignikkiEMyQ==
   dependencies:
-    "@middy/util" "4.6.5"
+    "@middy/util" "4.6.6"
 
-"@middy/event-normalizer@^4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.5.tgz#3b2f68322aaf2c8c99de83b86042b821ea30ee08"
-  integrity sha512-PFUhyt6TnH5whZQbYGVbqs3L+GIcnwXCk6uvpSg2MvQfFBCVk9Ij2rEUmL4ZCO/X/HQ4Af6fCWeDgF5wdQPK9Q==
+"@middy/event-normalizer@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.6.tgz#99c259bd690ede46486a22d82d170a9f3bc5fa8d"
+  integrity sha512-fmCHIwelX0JUt/saAUYO/3vYESPi+8Yi8oV+ibaR7AcMiCJjiKrXQ0z0Sc0EX+avQavdghYYV5UTIpiWw4KEoA==
   dependencies:
-    "@middy/util" "4.6.5"
+    "@middy/util" "4.6.6"
 
-"@middy/secrets-manager@^4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.5.tgz#522b06cec04edc2a22a4a99ca732cf0f960f068f"
-  integrity sha512-cAtjSAmQxS5Ob4lCmM+cRgzylk3q44DURW3JnsN83dDfyakH38Kh1eRsBTscvmXRL8qGjcV5JUJlzfjjhfdS6g==
+"@middy/secrets-manager@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.6.tgz#802e211d147ae8bc75999a6930375c64f69cf8ad"
+  integrity sha512-pMXR+2KAE//zxbH6Vm4b2DbTVGr7wND8WPhMOvU7qErJ9E0AfvmHACnDKe6gGp7+jx3fV2aS151+k4MeteHHFw==
   dependencies:
-    "@middy/util" "4.6.5"
+    "@middy/util" "4.6.6"
 
-"@middy/util@4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.5.tgz#cf5efe5ba85554d88c530aa8f12a5b32facc3779"
-  integrity sha512-4cSIgW2kLYcfQ13Z1hHK7BDLCBsBe76iIiJ7xlPd/G3gwOl661K/jYGFkpNvksbmkEpqwNR1EFve0Mw3i2jMJQ==
+"@middy/util@4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.6.tgz#1160d9fc3480db11161259e516eb87f4c2dde32b"
+  integrity sha512-JVUf6T+JA3bL8537M3nz8CBnLH2nU3TeMc5K2iG5SGBJVhUrDepN2j1+1kslqI1OpVUp7T3HLI1LF9Y+UYwxJg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2582,9 +2581,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 aws-cdk-lib@^2.63.0:
-  version "2.104.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.104.0.tgz#e81a3f2689d42f27ee354ef1e6ae19caf21a2949"
-  integrity sha512-gD5KD2j8C5ff7j4RTA5ajFDNnpw4EvVhWMgWWrOyIEa9OkndEXwzhvCvwbEpwmgSUvnmsmbiHTBaLg8KVP+yKA==
+  version "2.105.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.105.0.tgz#9cf71716c8c54495fbdfc00d613ff6ddc7c44782"
+  integrity sha512-pByAPfRyOzF+AVz56aLUPLhYiRZzfIjyV9Bf2t0X3cpwVW21zVC+8GrQcQwy+zWgFGg3Gx6IVFNio3t8awHXHA==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.200"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -2601,16 +2600,16 @@ aws-cdk-lib@^2.63.0:
     yaml "1.10.2"
 
 aws-cdk@^2.63.0:
-  version "2.104.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.104.0.tgz#67bda59aae58837b88f9923938d664a78076e2b8"
-  integrity sha512-JuCafR5D1lnMKA88JUYhvRYeguozAWneC/n6kR1FUG+kXtXxpEqOxP91118dfJZYRw7FMIkHW8ewddvLwaCy5g==
+  version "2.105.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.105.0.tgz#748d2d08e3d78de2752fcb1d7a6c7d8bed6ad042"
+  integrity sha512-3ji+HNlCJUJ3o9h430gdRhocmeQrpM49fibXpvj3rvzBwuyWSTe2t8uohMPScSMETv59sHOlZpOdAEd+WwkuHQ==
   optionalDependencies:
     fsevents "2.3.2"
 
-aws-sdk@^2.1490.0:
-  version "2.1490.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1490.0.tgz#bc66cba2522bf09957588435428bff26992f814e"
-  integrity sha512-nRVP1+JVGHytxrPpc+6I41lTILzYeTOBAdNbgCi5bwRPrnEr/DxunyHWbGh92qupfHbm9dFcKdao4pOMPDOcVA==
+aws-sdk@^2.1491.0:
+  version "2.1491.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1491.0.tgz#76dc800cf5e7a01730749a16d00ea3092ffd2182"
+  integrity sha512-RzoKhNJCqZSq6rVP/ZZJOjOEVgLiwJx9vsN1pc9MO9ukyJpLsiufJWXXiWVNhICvVsEUcvhSe0YnZJQlZ4NTPQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -4955,9 +4954,9 @@ isstream@~0.1.2:
   integrity sha512-Yljz7ffyPbrLpLngrMtZ7NduUgVvi6wG9RJ9IUcyCd59YQ911PBJphODUcbOVbqYfxe1wuYf/LJ8PauMRwsM/g==
 
 istanbul-lib-coverage@^3.0.0, istanbul-lib-coverage@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-3.2.1.tgz#c680fd1544600460367af5811866c34c44c6f3b1"
-  integrity sha512-opCrKqbthmq3SKZ10mFMQG9dk3fTa3quaOLD35kJa5ejwZHd9xAr+kLuziiZz2cG32s4lMZxNdmdcEQnTDP4+g==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-3.2.2.tgz#2d166c4b0644d43a39f04bf6c2edd1e585f31756"
+  integrity sha512-O8dpsF+r0WV/8MNRKfnmrtCWhuKjxrq2w+jpzBL5UZKTi2LeVWnWOmWRxFlesJONmc+wLAGvKQZEOanko0LFTg==
 
 istanbul-lib-instrument@^5.0.4:
   version "5.2.1"
