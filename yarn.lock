@@ -1378,36 +1378,36 @@
   resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.0.3.tgz#e742a5b85eb673e2f1746b0f39cb932cbc6145bb"
   integrity sha512-GlM2AbzrErd/TmLL3E8hAHmb5Q7VhDJp35vIbyPVA5Rz55LZuRr8pwL3qrwwkVNo05gMX1J44gURKb4MHQZo7w==
 
-"@middy/core@^4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.6.6.tgz#a5df69f63b2b72e45be037635e4474253177c0e7"
-  integrity sha512-ao3nP4yt0C9gc1F9KxSJ5vSJXQP87OhvyhB1UxEXGEOBk7ACZuNeZAU40/+Vk+EiQ4Em9H5R7RYUuPdiczRvoQ==
+"@middy/core@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@middy/core/-/core-4.7.0.tgz#37e055559d5bf05dcb7b288c44644e8ae4255900"
+  integrity sha512-yI++DmhDQ8+ugvY7+GrEnb2PF0M/6Wzbgu4Tf7QhOlhwKGDd4j6or+Ab7qYPWx+jnKf8F0tqlmh0gV4JLi0yHw==
 
-"@middy/dynamodb@^4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.6.6.tgz#de09814623a9f7e075829ace8603fcf1e9450ce3"
-  integrity sha512-O1XeVgpa2i4aG+UjNy0ba/CRXfAXKINd8f+MuqjfeYqhi2i+sEcL+uIMlEb9edzMKVws6bsBfOWignikkiEMyQ==
+"@middy/dynamodb@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@middy/dynamodb/-/dynamodb-4.7.0.tgz#193a56dbdb4ee51503f347c4e5ae69b6e3ddf217"
+  integrity sha512-pk2E5xqF/RH1VRAwGifyqkgdbzXLcGglmz+4CEYf1qR6IGGBunA934UHAahRods7QMJTOC4hk7xUDaVGtwhbsQ==
   dependencies:
-    "@middy/util" "4.6.6"
+    "@middy/util" "4.7.0"
 
-"@middy/event-normalizer@^4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.6.6.tgz#99c259bd690ede46486a22d82d170a9f3bc5fa8d"
-  integrity sha512-fmCHIwelX0JUt/saAUYO/3vYESPi+8Yi8oV+ibaR7AcMiCJjiKrXQ0z0Sc0EX+avQavdghYYV5UTIpiWw4KEoA==
+"@middy/event-normalizer@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@middy/event-normalizer/-/event-normalizer-4.7.0.tgz#d8d6b6822f0e8e78c091030d9ca7fd56874fecff"
+  integrity sha512-M6nmFKqbMS8htbWuZ92Qv/2RdhWBSPduvSgo+9M38/ZBzGifijSILTaaO1yuhcEJH3DwA25MAxtFGCygEUHcjw==
   dependencies:
-    "@middy/util" "4.6.6"
+    "@middy/util" "4.7.0"
 
-"@middy/secrets-manager@^4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.6.6.tgz#802e211d147ae8bc75999a6930375c64f69cf8ad"
-  integrity sha512-pMXR+2KAE//zxbH6Vm4b2DbTVGr7wND8WPhMOvU7qErJ9E0AfvmHACnDKe6gGp7+jx3fV2aS151+k4MeteHHFw==
+"@middy/secrets-manager@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@middy/secrets-manager/-/secrets-manager-4.7.0.tgz#09a7d4ef2abfc3a70cf7f23d04c059499ec51491"
+  integrity sha512-eQGrgNMyAOjMkgLHTwIKv8GFn9bcRZ4qeb5IjBLVwOiyMEBnXmWhF+06LsVhjTagKPTDFa6VveQQmSnkKe9mzw==
   dependencies:
-    "@middy/util" "4.6.6"
+    "@middy/util" "4.7.0"
 
-"@middy/util@4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.6.6.tgz#1160d9fc3480db11161259e516eb87f4c2dde32b"
-  integrity sha512-JVUf6T+JA3bL8537M3nz8CBnLH2nU3TeMc5K2iG5SGBJVhUrDepN2j1+1kslqI1OpVUp7T3HLI1LF9Y+UYwxJg==
+"@middy/util@4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@middy/util/-/util-4.7.0.tgz#c278766799db52880c1efebe2efc053d9d36c5ef"
+  integrity sha512-HUh0EOLGzBQjmJks4N12mmEebshtCUwyzdhk59UmAj97zzM0qn0exQvZDfbkY0pb/6b7sNnf7IpFww8Z6YxpWw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2581,9 +2581,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 aws-cdk-lib@^2.63.0:
-  version "2.106.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.106.0.tgz#7243d46c7d4979154f576d80c04d77ddec6f6571"
-  integrity sha512-3cZ8YJ9Adrfzd9zxm73sZ9Ozu6ABv3IqV4DIQzKT4R3Y0Ryn/91dqhg6ulZegrAXskCk47p2zjeOD4m/ubZcNg==
+  version "2.106.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.106.1.tgz#60456b5e6f3f9bcb50a331d6963e3b3047edb058"
+  integrity sha512-D+ZNbrxoCzmJ8+1d66TU4zaevvMa8Acb2DA5sx5CYwt3zXPPw8fJ9WOd376EGG6Ahn9Bwvmm0A6DHFsDRxG2ng==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.201"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -2600,9 +2600,9 @@ aws-cdk-lib@^2.63.0:
     yaml "1.10.2"
 
 aws-cdk@^2.63.0:
-  version "2.106.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.106.0.tgz#2dee4feb2c2013ef4847efdbae4e4cb37ef0457d"
-  integrity sha512-/kxjLmlgMR8T67hIq4qR+GvWaI9e+iPvJXFI5cmasMVW5aXVacJ/pGfggvdzja3czG22wXDg5QM7yjZ1xc8qwQ==
+  version "2.106.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.106.1.tgz#661c1fbe705cba8bade6ebb13d8f0173fe62e54c"
+  integrity sha512-RRkmXU7V6VPYGmmP/4Em+j8PQ06uecOetQVytyQISVzcYscrd+B+5ZXjFxy50Nvq0CUhOFWtDRbkQW06onmMzA==
   optionalDependencies:
     fsevents "2.3.2"
 
