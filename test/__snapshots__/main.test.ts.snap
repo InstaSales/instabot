@@ -78,7 +78,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "635d3550da71dd1d12dd23f1dd930e4bba0a0fffbafafd09ad7ea6b013d2e56f.zip",
+          "S3Key": "6cce910b74c25281fff4b152e6d1ca7b1a5f8ec3b438472ce4a004def5bfb9bc.zip",
         },
         "Description": "src/services/details-fetcher.lambda.ts",
         "Environment": {
@@ -218,7 +218,7 @@ exports[`Snapshot 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "0989005b336b891b32bb8163ec6c6f9e4563fcb0f9f5942509bfc32a2112abbe.zip",
+          "S3Key": "b0008057bf2ac06b82fdb09f61b2ee40441c768ad460f457dce16ad9c8511cbf.zip",
         },
         "Description": "src/services/scrapper.lambda.ts",
         "Environment": {
