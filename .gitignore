@@ -31,7 +31,6 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
-!/.projenrc.js
 /test-reports/
 junit.xml
 /coverage/
@@ -58,3 +57,4 @@ junit.xml
 .parcel-cache/
 !/src/services/details-fetcher-function.ts
 !/src/services/scrapper-function.ts
+!/.projenrc.js
