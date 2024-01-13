@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-dynamodb": "^3.490.0",
-    "@aws-sdk/client-secrets-manager": "^3.490.0",
+    "@aws-sdk/client-secrets-manager": "^3.491.0",
     "@aws-sdk/util-dynamodb": "^3.490.0",
     "@types/aws-lambda": "^8.10.131",
     "@types/jest": "^29.5.11",
@@ -66,7 +66,7 @@
     "@middy/event-normalizer": "^4.7.0",
     "@middy/secrets-manager": "^4.7.0",
     "aws-cdk-lib": "^2.63.0",
-    "aws-sdk": "^2.1534.0",
+    "aws-sdk": "^2.1535.0",
     "constructs": "^10.0.5",
     "instagram-private-api": "^1.45.3",
     "rxjs": "6.6.7"
