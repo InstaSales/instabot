@@ -57,16 +57,16 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^1.17.0",
-    "@aws-lambda-powertools/metrics": "^1.17.0",
-    "@aws-lambda-powertools/tracer": "^1.17.0",
+    "@aws-lambda-powertools/logger": "^1.18.0",
+    "@aws-lambda-powertools/metrics": "^1.18.0",
+    "@aws-lambda-powertools/tracer": "^1.18.0",
     "@aws-sdk/client-sqs": "^3.499.0",
     "@middy/core": "^4.7.0",
     "@middy/dynamodb": "^4.7.0",
     "@middy/event-normalizer": "^4.7.0",
     "@middy/secrets-manager": "^4.7.0",
     "aws-cdk-lib": "^2.63.0",
-    "aws-sdk": "^2.1543.0",
+    "aws-sdk": "^2.1544.0",
     "constructs": "^10.0.5",
     "instagram-private-api": "^1.45.3",
     "rxjs": "6.6.7"
