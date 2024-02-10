@@ -312,13 +312,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@aws-sdk/client-dynamodb,@aws-sdk/client-secrets-manager,@aws-sdk/util-dynamodb,@types/aws-lambda,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,aws-cdk,esbuild,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,eslint,jest,jest-junit,prettier,projen,standard-version,ts-jest,ts-node,typescript,@aws-lambda-powertools/logger,@aws-lambda-powertools/metrics,@aws-lambda-powertools/tracer,@aws-sdk/client-sqs,@middy/core,@middy/dynamodb,@middy/event-normalizer,@middy/secrets-manager,aws-cdk-lib,aws-sdk,constructs,instagram-private-api"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@aws-sdk/client-dynamodb,@aws-sdk/client-secrets-manager,@aws-sdk/util-dynamodb,@types/aws-lambda,@types/jest,esbuild,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,jest,prettier,projen,ts-jest,ts-node,typescript,@aws-lambda-powertools/logger,@aws-lambda-powertools/metrics,@aws-lambda-powertools/tracer,@aws-sdk/client-sqs,@middy/core,@middy/dynamodb,@middy/event-normalizer,@middy/secrets-manager,aws-sdk,instagram-private-api,rxjs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @aws-sdk/client-dynamodb @aws-sdk/client-secrets-manager @aws-sdk/util-dynamodb @types/aws-lambda @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk esbuild eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint jest jest-junit prettier projen standard-version ts-jest ts-node typescript @aws-lambda-powertools/logger @aws-lambda-powertools/metrics @aws-lambda-powertools/tracer @aws-sdk/client-sqs @middy/core @middy/dynamodb @middy/event-normalizer @middy/secrets-manager aws-cdk-lib aws-sdk constructs instagram-private-api"
+          "exec": "yarn upgrade @aws-sdk/client-dynamodb @aws-sdk/client-secrets-manager @aws-sdk/util-dynamodb @types/aws-lambda @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk esbuild eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint jest jest-junit prettier projen standard-version ts-jest ts-node typescript @aws-lambda-powertools/logger @aws-lambda-powertools/metrics @aws-lambda-powertools/tracer @aws-sdk/client-sqs @middy/core @middy/dynamodb @middy/event-normalizer @middy/secrets-manager aws-cdk-lib aws-sdk constructs instagram-private-api rxjs"
         },
         {
           "exec": "npx projen"
