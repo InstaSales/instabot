@@ -66,7 +66,7 @@
     "@middy/event-normalizer": "^4.7.0",
     "@middy/secrets-manager": "^4.7.0",
     "aws-cdk-lib": "^2.63.0",
-    "aws-sdk": "^2.1659.0",
+    "aws-sdk": "^2.1661.0",
     "constructs": "^10.0.5",
     "instagram-private-api": "^1.46.1",
     "rxjs": "6.6.7"
