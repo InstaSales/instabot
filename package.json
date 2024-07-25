@@ -32,10 +32,10 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@aws-sdk/client-dynamodb": "^3.616.0",
+    "@aws-sdk/client-dynamodb": "^3.619.0",
     "@aws-sdk/client-secrets-manager": "^3.616.0",
-    "@aws-sdk/util-dynamodb": "^3.616.0",
-    "@types/aws-lambda": "^8.10.141",
+    "@aws-sdk/util-dynamodb": "^3.619.0",
+    "@types/aws-lambda": "^8.10.142",
     "@types/jest": "^29.5.12",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
@@ -50,7 +50,7 @@
     "jest": "^29.7.0",
     "jest-junit": "^15",
     "prettier": "^2.8.8",
-    "projen": "^0.84.8",
+    "projen": "^0.84.9",
     "standard-version": "^9",
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
@@ -66,7 +66,7 @@
     "@middy/event-normalizer": "^4.7.0",
     "@middy/secrets-manager": "^4.7.0",
     "aws-cdk-lib": "^2.63.0",
-    "aws-sdk": "^2.1662.0",
+    "aws-sdk": "^2.1663.0",
     "constructs": "^10.0.5",
     "instagram-private-api": "^1.46.1",
     "rxjs": "6.6.7"
